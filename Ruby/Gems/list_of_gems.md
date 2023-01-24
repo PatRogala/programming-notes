@@ -4,3 +4,5 @@
 `pry` - an alternative to the Irb
 
 `byebug` - feature-rich debugging tool for Ruby
+
+`rspec` - testing framework
