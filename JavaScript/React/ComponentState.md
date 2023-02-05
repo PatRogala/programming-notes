@@ -103,9 +103,38 @@ const App = () => {
 }
 
 // shorter
-button onClick={() => setCounter(counter + 1)}>
+<button onClick={() => setCounter(counter + 1)}>
   plus
 </button>
 ```
 
 ## Complex state
+```js
+{ ...clicks, right: clicks.right + 1 }
+```
+creates a copy of the clicks object where the value of the right property is increased by one.
+```js
+const handleLeftClick = () =>
+  setClicks({ ...clicks, left: clicks.left + 1 })
+
+const handleRightClick = () =>
+  setClicks({ ...clicks, right: clicks.right + 1 })
+```
+
+Conditional Rendering
+```js
+const History = (props) => {
+  if (props.allClicks.length === 0) {
+    return (
+      <div>
+        the app is used by pressing the buttons
+      </div>
+    )
+  }
+  return (
+    <div>
+      button press history: {props.allClicks.join(' ')}
+    </div>
+  )
+}
+```
