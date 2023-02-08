@@ -27,3 +27,40 @@ promise.then(response => {
   console.log(response)
 })
 ```
+
+we can also send data to server using `post`
+```js
+axios
+  .post('http://localhost:3001/notes', noteObject)
+  .then(response => {
+    console.log(response)
+  })
+```
+
+also we can update/change already created resource using `put`
+
+```js
+axios.put(url, changedNote).then(response => {
+  setNotes(notes.map(n => n.id !== id ? n : response.data))
+})
+```
+
+we can also `catch` errors if anything goes wrong
+
+```js
+axios
+  .get('http://example.com/probably_will_fail')
+  .then(response => {
+    console.log('success!')
+  })
+  .catch(error => {
+    console.log('fail')
+  })
+```
+
+also we can delete created resource using `delete` keyword
+
+```js
+const request = axios.delete(`${baseUrl}/${id}`)
+return request.then(response => response.data)
+```
