@@ -20,3 +20,11 @@ useEffect does something when something changes
 if second argument is empty array `[]` then useEffect will trigger at first load of page
 
 By default, effects run after every completed render, but you can choose to fire it only when certain values have changed.
+
+we can manipulate effect to trigger on specific change of state
+
+```js
+useEffect(fun, [currency])
+```
+
+This will trigger when a `currency` state changes
