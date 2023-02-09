@@ -11,6 +11,10 @@
 
 `json-server` development server for JS database
 
+`express` backend server
+
+`nodemon` development server
+
 ## List of useful commands and settings
 
 ```json
