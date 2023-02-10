@@ -35,3 +35,27 @@ we can use middleware
 ```js
 app.use(express.json())
 ```
+
+middleware is a function that takes 3 arguments
+
+```js
+const requestLogger = (request, response, next) => {
+  console.log('Method:', request.method)
+  console.log('Path:  ', request.path)
+  console.log('Body:  ', request.body)
+  console.log('---')
+  next()
+}
+```
+
+```js
+const unknownEndpoint = (request, response) => {
+  response.status(404).send({ error: 'unknown endpoint' })
+}
+
+app.use(unknownEndpoint)
+```
+
+```js
+app.use(express.static('build')) // Allows us to use static from `build` directory
+```

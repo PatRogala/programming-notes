@@ -15,6 +15,14 @@
 
 `nodemon` development server
 
+`morgan` middleware for logging
+
+`cors` cors middleware for cross origin requests
+
+`mongoose` mongoDB for node
+
+`eslint` static code analyzer
+
 ## List of useful commands and settings
 
 ```json
@@ -29,3 +37,6 @@
 then run for example
 
 `npm run <SCRIPT>`
+
+
+`"proxy": "http://localhost:3001"` allows us to use proxy for development frontend

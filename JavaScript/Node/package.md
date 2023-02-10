@@ -24,4 +24,5 @@ we can add our new `"scripts"` to enchance work
 ```json
 "start": "node index.js", // starting server in prod mode
 "dev": "nodemon index.js", // server in dev mode
+"lint": "eslint ." // check eslint for errors
 ```
