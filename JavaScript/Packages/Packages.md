@@ -23,6 +23,8 @@
 
 `eslint` static code analyzer
 
+`jest` testing library
+
 ## List of useful commands and settings
 
 ```json
