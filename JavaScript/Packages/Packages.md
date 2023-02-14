@@ -25,6 +25,10 @@
 
 `jest` testing library
 
+`cross-env` env variables for windows users
+
+`supertest` package to help us write our tests for testing the API.
+
 ## List of useful commands and settings
 
 ```json
