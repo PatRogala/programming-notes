@@ -29,6 +29,8 @@
 
 `supertest` package to help us write our tests for testing the API.
 
+`express-async-errors` deletes try catch problem
+
 ## List of useful commands and settings
 
 ```json
