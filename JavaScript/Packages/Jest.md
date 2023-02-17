@@ -46,3 +46,15 @@ module.exports = {
   // ...
 }
 ```
+
+Running single file
+
+`npm test -- tests/note_api.test.js`
+
+Running single test
+
+`npm test -- -t "a specific note is within the returned notes"`
+
+Running tests with name including `notes`
+
+`npm test -- -t 'notes'`
