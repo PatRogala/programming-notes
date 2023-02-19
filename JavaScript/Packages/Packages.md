@@ -31,6 +31,12 @@
 
 `express-async-errors` deletes try catch problem
 
+`bcrypt` for password hashing
+
+`mongoose-unique-validator` validate unique values
+
+`jsonwebtoken` generating json tokens
+
 ## List of useful commands and settings
 
 ```json
